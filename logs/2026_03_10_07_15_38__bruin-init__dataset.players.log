@@ -1,0 +1,86 @@
+
+Pipeline: bruin-init (../..)
+  No issues found
+
+✓ Successfully validated 3 assets across 1 pipeline, all good.
+
+Interval: 2026-03-09T00:00:00Z - 2026-03-09T23:59:59Z
+
+Starting the pipeline execution...
+
+[07:15:38] Running:  dataset.players
+[07:16:16] >> 2026-03-10 07:16:16,761|[WARNING]|31962|124201437034304|dlt|reference.py|__init__:76|When initializing destination factory of type dlt.destinations.duckdb, argument dest_table is not a valid field in DuckDbClientConfiguration or destination capabilities
+[07:16:16] >> 2026-03-10 07:16:16,761|[WARNING]|31962|124201437034304|dlt|reference.py|__init__:76|When initializing destination factory of type dlt.destinations.duckdb, argument staging_bucket is not a valid field in DuckDbClientConfiguration or destination capabilities
+[07:16:16] >> 
+[07:16:16] >> Initiated the pipeline with the following:
+[07:16:16] >>   Source: chess / profiles
+[07:16:16] >>   Destination: duckdb / dataset.players
+[07:16:16] >>   Incremental Strategy: Platform-specific
+[07:16:16] >>   Incremental Key: None
+[07:16:16] >>   Primary Key: None
+[07:16:16] >>   Pipeline ID: ad894051fe94b5356e85b6f0879ebda3353a172f54cfd5c0e3260023b56004e9
+[07:16:16] >> 
+[07:16:16] >> 
+[07:16:16] >> Starting the ingestion...
+[07:16:17] >> -------------------------------- Extract chess ---------------------------------
+[07:16:17] >> Resources: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+[07:16:17] >> Memory usage: 253.10 MB (47.10%) | CPU usage: 0.00%
+[07:16:17] >> 
+[07:16:17] >> -------------------------------- Extract chess ---------------------------------
+[07:16:17] >> Resources: 1/1 (100.0%) | Time: 0.63s | Rate: 1.59/s
+[07:16:17] >> players: 1  | Time: 0.00s | Rate: 209715.20/s
+[07:16:17] >> Memory usage: 257.35 MB (47.20%) | CPU usage: 0.00%
+[07:16:17] >> 
+[07:16:17] >> -------------------------------- Extract chess ---------------------------------
+[07:16:17] >> Resources: 1/1 (100.0%) | Time: 0.66s | Rate: 1.52/s
+[07:16:17] >> players: 2  | Time: 0.03s | Rate: 73.62/s
+[07:16:17] >> Memory usage: 257.35 MB (47.20%) | CPU usage: 0.00%
+[07:16:17] >> 
+[07:16:17] >> -------------------------------- Extract chess ---------------------------------
+[07:16:17] >> Resources: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+[07:16:17] >> Memory usage: 257.35 MB (47.20%) | CPU usage: 0.00%
+[07:16:17] >> 
+[07:16:17] >> -------------------------------- Extract chess ---------------------------------
+[07:16:17] >> Resources: 0/1 (0.0%) | Time: 0.00s | Rate: 0.00/s
+[07:16:17] >> _dlt_pipeline_state: 1  | Time: 0.00s | Rate: 299593.14/s
+[07:16:17] >> Memory usage: 257.35 MB (47.20%) | CPU usage: 0.00%
+[07:16:17] >> 
+[07:16:17] >> -------------------------------- Extract chess ---------------------------------
+[07:16:17] >> Resources: 1/1 (100.0%) | Time: 0.02s | Rate: 62.06/s
+[07:16:17] >> _dlt_pipeline_state: 1  | Time: 0.01s | Rate: 83.38/s
+[07:16:17] >> Memory usage: 257.35 MB (47.20%) | CPU usage: 0.00%
+[07:16:17] >> 
+[07:16:17] >> -------------------- Normalize chess in 1773126977.0018013 ---------------------
+[07:16:17] >> Files: 0/2 (0.0%) | Time: 0.00s | Rate: 0.00/s
+[07:16:17] >> Memory usage: 258.35 MB (47.30%) | CPU usage: 0.00%
+[07:16:17] >> 
+[07:16:17] >> -------------------- Normalize chess in 1773126977.0018013 ---------------------
+[07:16:17] >> Files: 0/2 (0.0%) | Time: 0.00s | Rate: 0.00/s
+[07:16:17] >> Items: 0  | Time: 0.00s | Rate: 0.00/s
+[07:16:17] >> Memory usage: 258.48 MB (47.30%) | CPU usage: 0.00%
+[07:16:17] >> 
+[07:16:17] >> -------------------- Normalize chess in 1773126977.0018013 ---------------------
+[07:16:17] >> Files: 2/2 (100.0%) | Time: 0.11s | Rate: 17.93/s
+[07:16:17] >> Items: 3  | Time: 0.11s | Rate: 26.99/s
+[07:16:17] >> Memory usage: 261.60 MB (47.50%) | CPU usage: 0.00%
+[07:16:17] >> 
+[07:16:17] >> ----------------------- Load chess in 1773126977.0018013 -----------------------
+[07:16:17] >> Jobs: 0/2 (0.0%) | Time: 0.00s | Rate: 0.00/s
+[07:16:17] >> Memory usage: 261.85 MB (47.50%) | CPU usage: 0.00%
+[07:16:17] >> 
+[07:16:18] >> ----------------------- Load chess in 1773126977.0018013 -----------------------
+[07:16:18] >> Jobs: 2/2 (100.0%) | Time: 0.20s | Rate: 9.81/s
+[07:16:18] >> Memory usage: 273.75 MB (47.60%) | CPU usage: 0.00%
+[07:16:18] >> 
+[07:16:18] >> Successfully finished loading data from 'chess' to 'duckdb' in 1.30 seconds 
+[07:16:18] >> 
+[07:16:20] Finished: dataset.players (41.414s)
+
+==================================================
+
+PASS dataset.players 
+
+
+bruin run completed successfully in 41.415s
+
+ ✓ Assets executed      1 succeeded
