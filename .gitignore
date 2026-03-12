@@ -1,0 +1,6 @@
+# Ignore Jupyter Notebook checkpoint files
+**/.ipynb_checkpoints/
+
+# Ignore large dataset and notebook files that exceed GitHub limits
+Module6_2026/notebook/*.csv.gz
+Module6_2026/notebook/04_pyspark.ipynb
